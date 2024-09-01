@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    background-color: #e0f7fa; /* Azul claro */
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #00796b; /* Azul turquesa */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo de las indicaciones */
+.indicaciones {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    color: #333;
+}
+
+.indicaciones h2 {
+    color: #e91e63; /* Rosa fuerte */
+}
+
+/* Estilo del mapa */
+.mapa {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/* Media queries para pantallas más grandes */
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+    
+    .indicaciones {
+        margin: 0 auto 20px auto;
+        max-width: 600px;
+    }
+
+    .map-container iframe {
+        height: 450px;
+        width: 600px;
+    }
+}
+
+/* Estilo adicional para botones o enlaces */
+button, .btn {
+    background-color: #e91e63; /* Rosa fuerte */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+button:hover, .btn:hover {
+    background-color: #ad1457; /* Rosa oscuro */
+}
